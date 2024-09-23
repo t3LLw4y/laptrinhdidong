@@ -1,10 +1,21 @@
 fun main() {
+
     val operatingSystem = "Chrome OS"
-    val emailId = "sample@gmail.com"
+    val firstUserEmailId = "user_one@gmail.com"
+    println(displayAlertMessage(operatingSystem, firstUserEmailId))
 
-    println(displayAlertMessage(operatingSystem, emailId))
+    val secondUserOperatingSystem = "Windows"
+    val secondUserEmailId = "user_two@gmail.com"
+    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmailId))
+
+    val thirdUserOperatingSystem = "Mac OS"
+    val thirdUserEmailId = "user_three@gmail.com"
+    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmailId)) // Pass  
+    thirdUserEmailId to "email"
 }
 
-fun displayAlertMessage(os: String, email: String): String {
-    return "Alert! This device ($os) may not be compatible with your primary email ($email). \nPlease ensure you have access to your email on this device."
+fun displayAlertMessage(os: String, email: String): String { // Function parameter is 'email'
+    return "There's a new sign-in request on $os for your Google Account $email. "
+
 }
+
