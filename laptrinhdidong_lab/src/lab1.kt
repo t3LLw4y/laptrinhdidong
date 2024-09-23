@@ -29,3 +29,7 @@ fun main() {
     var result = firstNumber + secondNumber
     println("$firstNumber + $secondNumber = $result")
 }
+
+fun add(){
+
+}
