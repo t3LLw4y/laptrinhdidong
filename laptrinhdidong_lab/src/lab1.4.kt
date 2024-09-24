@@ -10,9 +10,6 @@ fun main(){
 
 }
 
-
-
-
 fun compare(today: Double, yesterday: Double): Boolean {
     return today > yesterday
 }
