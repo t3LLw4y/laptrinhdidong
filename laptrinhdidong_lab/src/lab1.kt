@@ -30,6 +30,3 @@ fun main() {
     println("$firstNumber + $secondNumber = $result")
 }
 
-fun add(){
-
-}
